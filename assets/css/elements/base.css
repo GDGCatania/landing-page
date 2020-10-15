@@ -1,0 +1,11 @@
+html {
+  @apply antialiased;
+
+&.noscroll {
+   overflow: hidden;
+ }
+}
+
+body {
+  @apply text-base leading-normal font-normal;
+}
