@@ -2,11 +2,10 @@ h1,
 .h1 {
   @apply text-3xl;
   line-height: 1.2;
-
-@screen md {
-  @apply text-4xl;
-  line-height: 1.17;
-}
+  @screen md {
+    @apply text-4xl;
+    line-height: 1.17;
+  }
 }
 
 h2,
@@ -43,5 +42,5 @@ small,
 }
 
 .link {
-  @apply text-xs font-medium tracking-wide leading-tight uppercase;
+  @apply tracking-wide leading-tight;
 }

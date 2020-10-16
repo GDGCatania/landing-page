@@ -30,7 +30,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        '"IBM Plex Sans", sans-serif',
+        '"Open Sans", sans-serif',
       ],
     },
     letterSpacing: {
@@ -38,15 +38,15 @@ module.exports = {
       wide: '1px',
     },
     colors: {
-      current: 'currentColor',
       transparent: 'transparent',
       black: '#000',
       white: '#FFF',
       gray: {
-        default: '#7F7F7F',
+        default: '#5f6368',
         100: '#F2F2F2',
         200: '#E0E0E0',
         500: '#B2B2B2',
+        900: '#202124',
       },
     },
     extend: {
@@ -106,10 +106,6 @@ module.exports = {
       },
       width: {
         14: '3.5rem', // 56 px
-      },
-      maxWidth: {
-        pic: '5rem',
-        '8xl': '90rem',
       },
     },
   },

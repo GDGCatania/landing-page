@@ -1,5 +1,6 @@
 html {
   @apply antialiased;
+  overflow-x: hidden;
 
 &.noscroll {
    overflow: hidden;
@@ -7,5 +8,5 @@ html {
 }
 
 body {
-  @apply text-base leading-normal font-normal;
+  @apply text-base leading-normal font-normal text-gray;
 }
