@@ -21,7 +21,7 @@ The Conventional Commits specification is a lightweight convention on top of com
 
 It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of.
 
-## Report bugs using Github's [issues](https://github.com/briandk/transcriptase-atom/issues)
+## Report bugs using Github's issues
 We use GitHub issues to track public bugs. Report a bug by [opening a new issue](); it's that easy!
 
 ## Write bug reports with detail, background, and sample code
