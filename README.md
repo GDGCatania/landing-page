@@ -1,4 +1,4 @@
-# GDG CATANIA'S LANDING PAGE
+# GDG Catania's Landing page
 
 ## Build Setup
 
