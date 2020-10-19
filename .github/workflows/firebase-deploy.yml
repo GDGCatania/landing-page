@@ -1,0 +1,31 @@
+name: build-and-deploy-to-firebase
+on:
+  push:
+    branches:
+      - release/*
+jobs:
+  code-lint:
+    name: Run code linter
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@master
+        with:
+          node-version: '10.x'
+      - run: yarn install
+      - run: yarn lint
+  firebase-deploy:
+    name: Deploy to Firebase Hosting
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@master
+        with:
+          node-version: '10.x'
+      - run: yarn install
+      - run: yarn generate
+      - uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only hosting
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}

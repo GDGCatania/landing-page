@@ -1,0 +1,13 @@
+name: build-and-deploy-to-firebase
+on: pull_request
+jobs:
+  code-lint:
+    name: Run code linter
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@master
+        with:
+          node-version: '10.x'
+      - run: yarn install
+      - run: yarn lint
